@@ -43,7 +43,7 @@ function App() {
           <label className="form-label" >Usuario</label>
           <input className="form-control mb-4" type="text" onChange={(e) => setData({ ...data, usuario: e.target.value })} value={data.usuario} />
           <label className="form-label" >Contraseña</label>
-          <input className="form-control mb-4" type="password" onChange={(e) => setData({ ...data, contrasena: e.target.value })} value={data.contrasena} />
+          <input className="form-control mb-4" type="password" onChange={(e) => setData({ ...data, contrasena: e.target.value })} autoComplete='on' value={data.contrasena} />
           <button className='btn btn-primary '>Iniciar Sesion</button>
         </form>
         {error ? <Mensaje message={message} /> : ""}
