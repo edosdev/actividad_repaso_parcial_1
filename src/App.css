@@ -4,7 +4,17 @@
   padding: 2rem;
   text-align: center;
 }
-
+.containerForm {
+  width: 80%;
+  border: 1px solid white;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 42px;
+  margin: auto;
+}
 .logo {
   height: 6em;
   padding: 1.5em;

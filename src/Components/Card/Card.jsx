@@ -1,13 +1,16 @@
 import React from 'react'
 import {containerCard} from './Card.module.css'
 
-function Card() {
+function Card({usuario}) {
   return (
+    <>
     <div className={containerCard}>
-      <h1>Titulo</h1>
-      <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore incidunt asperiores aliquam excepturi quibusdam perferendis porro. Molestias a inventore quisquam saepe quasi praesentium atque ex pariatur. Nostrum tenetur vitae ipsa!</div>
-      <button>Selecionar</button>
+      <h1>Hola!</h1>
+      <div>Es un gusto verte <b>{usuario}</b>, de nuevo por aqui !</div>
+        <button className='btn btn-primary' onClick={()=>{window.location.href = '/'}}> Salir</button>
     </div>
+ 
+    </>
   )
 }
 
